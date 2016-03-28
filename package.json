@@ -1,0 +1,22 @@
+{
+  "name": "twitter-reply-bot",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "4.4.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "bluebird": "3.3.4",
+    "express": "4.13.4",
+    "lodash": "4.6.1",
+    "moment": "2.12.0",
+    "mongodb": "2.1.11",
+    "request-promise": "2.0.1",
+    "twitter": "1.2.5"
+  },
+  "devDependencies": {}
+}

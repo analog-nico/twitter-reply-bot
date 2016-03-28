@@ -1,0 +1,17 @@
+{
+  "twitter_api": {
+    "consumer_key":        "TODO: Set according to https://apps.twitter.com -> create app -> tab 'Keys and Access Tokens' -> Application Settings -> Consumer Key (API Key)",
+    "consumer_secret":     "TODO: Set according to https://apps.twitter.com -> create app -> tab 'Keys and Access Tokens' -> Application Settings -> Consumer Secret (API Secret)",
+    "access_token_key":    "TODO: Set according to https://apps.twitter.com -> create app -> tab 'Keys and Access Tokens' -> Your Access Token -> Access Token",
+    "access_token_secret": "TODO: Set according to https://apps.twitter.com -> create app -> tab 'Keys and Access Tokens' -> Your Access Token -> Access Token Secret"
+  },
+  "database": {
+    "url": "mongodb://... TODO: See http://mongodb.github.io/node-mongodb-native/driver-articles/mongoclient.html#the-url-connection-format"
+  },
+  "bot_parameters": {
+    "query": "TODO: See 'Query Operators' in https://dev.twitter.com/rest/public/search",
+    "lang": "en",
+    "replyOnceEveryXMinutes": 15,
+    "replyToTweetsAtLeastXMinutesOld": 5
+  }
+}
