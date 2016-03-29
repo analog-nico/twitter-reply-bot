@@ -6,7 +6,7 @@ var BPromise = require('bluebird');
 
 var search = require('./lib/search.js');
 var users = require('./lib/users.js');
-var tweets = require('./lib/tweets.js');
+var responses = require('./lib/responses.js');
 var reply = require('./lib/reply.js');
 
 
@@ -63,7 +63,7 @@ function tweet() {
                 return null;
             }
 
-            var compiledTweet = tweets.getNextTweet(chosenTweet.id_str, chosenTweet.user.screen_name);
+            var compiledTweet = responses.getNextTweet(chosenTweet.id_str, chosenTweet.user.screen_name);
             console.dir(compiledTweet);
 
             return reply(compiledTweet);
