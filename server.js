@@ -15,7 +15,7 @@ var settings = require('./settings.json');
 
 function tweet() {
 
-    search(settings.bot_parameters.query, settings.bot_parameters.replyToTweetsAtLeastXMinutesOld, settings.bot_parameters.replyToTweetsAtLeastXMinutesOld + settings.bot_parameters.replyOnceEveryXMinutes - 1)
+    return search(settings.bot_parameters.query, settings.bot_parameters.replyToTweetsAtLeastXMinutesOld, settings.bot_parameters.replyToTweetsAtLeastXMinutesOld + settings.bot_parameters.replyOnceEveryXMinutes - 1)
         .then(function (chooseFromThese) {
 
             var chooseFromThese = _.shuffle(chooseFromThese);
@@ -105,7 +105,14 @@ BPromise.resolve()
     })
     .then(tweet)
     .catch(function (err) {
-        console.dir(err);
+        if (_.isArray(err)) {
+            _.forEach(err, function (e) {
+                console.dir(e);
+            });
+        } else {
+            console.dir(err);
+        }
+        console.log('EXITING');
         process.exit(1);
     });
 
