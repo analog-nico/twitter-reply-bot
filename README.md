@@ -46,7 +46,7 @@ The bot runs on node.js. Install node.js v4 on your system. Then execute `npm in
 
 ## Don't spam!
 
-You have to be aware that you may violate Twitters [Developer Agreement and Policy](https://dev.twitter.com/overview/terms/agreement-and-policy), [Automation Rules](https://support.twitter.com/articles/76915-automation-rules-and-best-practices) and/or [Twitter Rules](https://support.twitter.com/articles/18311-the-twitter-rules) by using this bot - depending on how you configure it. If you don't configure it carefully your account may get closed down by Twitter.
+You have to be aware that you may violate Twitters [Developer Agreement and Policy](https://dev.twitter.com/overview/terms/agreement-and-policy), [Automation Rules](https://support.twitter.com/articles/76915-automation-rules-and-best-practices) and/or [Twitter Rules](https://support.twitter.com/articles/18311-the-twitter-rules) by using this bot - depending on how you configure it. If you don't configure it carefully [your app will get suspended](https://support.twitter.com/articles/72585) or even your account may get closed down by Twitter.
 
 The bot already contains a few mechanisms to prevent abuse. One mechanism is the user database that makes sure that a single user never gets more that one reply from the bot. If a single user would get multiple replies she would easily think of it as spam and report the bot to Twitter. Also all responses are designed to contain an image. This image shall be used to make the reply valuable - e.g. a picture that lightens the mood. However, the bot could also be configured to sent blunt ads. Don't do this!
 
