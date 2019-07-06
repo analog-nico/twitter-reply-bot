@@ -6,7 +6,9 @@
     "node": "4.4.1"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "main": "server.js",
   "dependencies": {
@@ -16,7 +18,9 @@
     "moment": "2.12.0",
     "mongodb": "2.1.11",
     "request-promise": "2.0.1",
-    "twitter": "1.2.5"
+    "twitter": "1.2.5",
+    "snyk": "^1.192.3"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }
