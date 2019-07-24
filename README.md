@@ -1,3 +1,5 @@
+**WARNING**: This repository is not maintained anymore.
+
 # Twitter Reply Bot
 
 A Twitter bot which finds tweets that match your search terms and replies with responses you prepared. Useful for engaging with new people on a certain topic. **But [don't spam](#dont-spam)!**
