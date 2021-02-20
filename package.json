@@ -11,7 +11,7 @@
   "main": "server.js",
   "dependencies": {
     "bluebird": "3.3.4",
-    "express": "4.13.4",
+    "express": "4.15.3",
     "lodash": "4.6.1",
     "moment": "2.12.0",
     "mongodb": "2.1.11",
